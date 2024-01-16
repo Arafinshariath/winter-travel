@@ -134,11 +134,11 @@
             line-height: 26px;
         }
         .details img{
-            width: 540px;
-            height: 550px;
+            width: 420px;
+            height: 450px;
             flex-shrink: 0;
             border-radius: 16px;
-            padding-left: 180px;
+            padding-left: 150px;
         }
 
 
@@ -182,10 +182,11 @@ flex-shrink: 0;
  flex-direction: row;
 }
 
-.images2{
+.images2{display: flex;
     padding-top: 20px;
     padding-left: 230px;
     padding-right: 120px;
+    gap: 10px;
   
 }
 .img3{
@@ -278,7 +279,102 @@ background: rgba(233, 68, 68, 0.05);
 }
 
 
+
+
+
+.h{
+    width: 393px;
+height: 1px;
+
+}
+
+.newsletter{
+    width: 420px;
+height: 400px;
+gap: 20px;
+border: 2px solid orangered;
+margin-top: 50px;
+margin-left: 200px;
+
+}
+.newsletter h3{
+    color: #131318;
+font-size: 24px;
+ font-weight: 800;
  
+}
+
+.newsletter p{
+    width: 350px;
+}
+.newsletter input{
+    width: 393px;
+height: 52px;
+flex-shrink: 0;
+border-radius: 8px;
+background: rgba(19, 19, 24, 0.05);
+gap: 20px;
+
+
+}
+
+
+.entry{
+    display: flex;
+    gap: 80px;
+}
+
+.entry img{
+    padding-top: 45px;
+}
+
+.badge{
+    border-radius: 16px;
+background: #FF5400;
+color: #f1ebeb;
+text-align: center;
+width: 250px;
+height: 80px;
+position: relative;
+ bottom: 150px;
+ left: 400px;
+ transform: rotate(-19.628deg);
+}
+
+
+
+footer{
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.last{
+    text-align: center;
+}
+.last1{
+    text-align: center;
+}
+.last2{
+    text-align: center;
+}
+@media screen and (max-width:600px) {
+  header{
+    padding: 20px;
+  }
+    nav
+    
+    {
+    flex-direction: column;
+   }
+}
+@media screen and (min-width:600px) and (max-width:992px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -383,7 +479,42 @@ background: rgba(233, 68, 68, 0.05);
                </div>
 
         </section>
+        <section>
+           <div class="entry">
+            <div class="newsletter">
+                <h3>Newsletter</h3>
+                <p>Get your daily dose of travel news & tips. Sign up today!</p><br>
+                <hr class="h">
+                <input type="text" value="Enter your name"><br>
+                <input type="text" value="Enter your email"><br>
+                <button class="btn-primary">Subscribe</button>
+            </div>
+            <div>
+                <img src="styles/Images/Rectangle 8 (1).png" alt="">
+               <div class="badge">
+               <p>Travel.com</p>
+                    <h2>Save up to 70%</h2>
+               </div>
+            </div>
+           </div>
+        </section>
+
     </main>
+    <footer>
+        <div class="last">
+            <img src="styles/Images/Group 40071 (2).png" alt="">
+                <h2><span>Winter</span> Travel</h2>
+                <p>Everybody should be invited. Feel the happiness in new travelling world.</p>
+        </div>
+        <div class="last1">
+            <img src="styles/Images/facebook.png" alt="">
+            <img src="styles/Images/insta.png" alt="">
+            <img src="styles/Images/twitter.png" alt="">
+           
+        </div>
+        <hr>
+        <p class="last2">2017, All Rights Reserved.</p>
+    </footer>
     
    
     
