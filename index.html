@@ -163,28 +163,33 @@
         }
 
 
-        .images{
- display: flex;
- gap: 20px;
+        .images1{
+            display: flex;
+    padding-top: 20px;
+    padding-left: 180px;
+    padding-right: 120px;
+    gap: 10px;
+    
         }
         .img1{
-            width: 550px;
+            width: 560px;
 height: 300px;
 flex-shrink: 0;
  
- flex-direction: row;
- padding-left: 230px;
+ 
+ 
+ 
         }
-        .img2{  width:550px;
+        .img2{  width:560px;
 height: 300px;
 flex-shrink: 0;
  
- flex-direction: row;
+ 
 }
 
 .images2{display: flex;
     padding-top: 20px;
-    padding-left: 230px;
+    padding-left: 180px;
     padding-right: 120px;
     gap: 10px;
   
@@ -208,7 +213,7 @@ flex-shrink: 0;
 
 
 .images3{
-    padding-left: 220px;
+    padding-left: 180px;
     padding-top: 20px;
 }
 
@@ -358,13 +363,34 @@ footer{
 }
 @media screen and (max-width:600px) {
   header{
-    padding: 20px;
+    padding: 50px;
   }
-    nav
+    nav,
     
+    .details,
+    .destination h2 p,
+    .newsletter,
+    .entry,
+   
     {
     flex-direction: column;
+    padding-left: 20px;
+    text-align: center;
    }
+   .images1,
+    .images2,
+    .images3,
+    .details img,
+    .img1, 
+    .img2{
+        grid-template-columns: 1fr;
+        padding-right: 100px;
+        padding-left: 40px;
+    }
+    .input{
+        justify-content: center;
+    }
+
 }
 @media screen and (min-width:600px) and (max-width:992px) {
     header{
@@ -372,6 +398,12 @@ footer{
     }
     nav{
         flex-direction: column;
+    }
+    .images1,
+    .images2,
+    .images3,
+    .newsletter{
+        grid-template-columns: 1fr;
     }
 }
 
@@ -438,7 +470,7 @@ footer{
         </section>
 
         <section>
-            <div class="images">
+            <div class="images1">
                 <img class="img1" src="styles/Images/Rectangle 5.png" alt="">
                 <img class="img2" src="styles/Images/Rectangle 8 (1).png" alt="">
             </div>
